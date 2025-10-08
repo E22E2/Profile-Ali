@@ -1,165 +1,222 @@
 body {
-            margin: 0;
-            padding: 0;
-            min-height: 100vh;
-            background-image: url('https://morebi.x10.mx/set.png');
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            font-family: 'Arial', sans-serif;
-        }
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-image: url('https://morebi.x10.mx/set.png');
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+}
 
-        .profile-card {
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(15px);
-            padding: 1.5rem;
-            border-radius: 12px;
-            width: 90%;
-            max-width: 280px;
-            text-align: center;
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-            transition: all 0.3s ease;
-            margin-bottom: 20px;
-        }
+/* البطاقة الشخصية */
+.profile-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    padding: 1.2rem;
+    border-radius: 12px;
+    width: 92%;
+    max-width: 320px;
+    text-align: center;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
+}
 
-        .profile-img {
-            width: 110px;
-            height: 110px;
-            border-radius: 50%;
-            border: 3px solid #fff;
-            margin: -60px auto 10px;
-            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
-            animation: float 3s ease-in-out infinite;
-        }
+.profile-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    margin: -50px auto 10px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    animation: float 3s ease-in-out infinite;
+}
 
-        @keyframes float {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-8px); }
-        }
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+}
 
-        h1 {
-            color: #fff;
-            margin: 6px 0;
-            font-size: 1.6em;
-            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
-        }
+h1 {
+    color: #fff;
+    margin: 6px 0;
+    font-size: 1.4em;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
 
-        .details {
-            color: #eee;
-            font-size: 0.85em;
-            margin: 10px 0;
-            line-height: 1.5;
-        }
+.details {
+    color: #eee;
+    font-size: 0.85em;
+    margin: 8px 0;
+    line-height: 1.5;
+}
 
-        .social-links {
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-            margin: 15px 0;
-        }
+/* روابط التواصل */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 12px 0;
+}
 
-        .social-links a {
-            color: #fff;
-            font-size: 1.2em;
-            padding: 6px;
-            transition: all 0.3s ease;
-            border-radius: 50%;
-            width: 35px;
-            height: 35px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: rgba(255, 255, 255, 0.1);
-        }
+.social-links a {
+    color: #fff;
+    font-size: 1em;
+    padding: 6px;
+    transition: all 0.3s ease;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.1);
+}
 
-        .social-links a:hover {
-            background: #fff;
-            color: #0A74DA;
-            transform: scale(1.1);
-        }
+.social-links a:hover {
+    background: #fff;
+    color: #0A74DA;
+    transform: scale(1.1);
+}
 
-        .cta-button {
-            display: inline-block;
-            padding: 8px 20px;
-            background: linear-gradient(45deg, #2196F3, #1976D2);
-            color: white;
-            text-decoration: none;
-            border-radius: 20px;
-            font-size: 0.8em;
-            transition: all 0.3s ease;
-            margin-top: 10px;
-        }
+/* الزر */
+.cta-button {
+    display: inline-block;
+    padding: 8px 18px;
+    background: linear-gradient(45deg, #2196F3, #1976D2);
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 0.8em;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
 
-        .cta-button:hover {
-            transform: scale(1.05);
-            box-shadow: 0 4px 12px rgba(33, 150, 243, 0.3);
-        }
+.cta-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(33, 150, 243, 0.3);
+}
 
-        .info-boxes {
-            display: flex;
-            justify-content: space-between;
-            gap: 8px;
-            margin: 0 auto;
-            flex-wrap: wrap;
-            max-width: 350px;
-        }
+/* المربعات */
+.info-boxes {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    max-width: 330px;
+}
 
-        .info-box {
-            background: rgba(255, 255, 255, 0.08);
-            padding: 12px;
-            border-radius: 8px;
-            flex: 1;
-            min-width: 80px;
-            transition: all 0.3s ease;
-            backdrop-filter: blur(5px);
-            text-align: center;
-        }
+.info-box {
+    background: rgba(255, 255, 255, 0.08);
+    padding: 10px;
+    border-radius: 8px;
+    flex: 1;
+    min-width: 80px;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(5px);
+    text-align: center;
+}
 
-        .info-box:hover {
-            transform: translateY(-3px);
-            background: rgba(255, 255, 255, 0.12);
-        }
+.info-box:hover {
+    transform: translateY(-3px);
+    background: rgba(255, 255, 255, 0.12);
+}
 
-        .info-box i {
-            font-size: 1.2em;
-            margin-bottom: 5px;
-            color: #2196F3;
-        }
+.info-box i {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    color: #2196F3;
+}
 
-        .info-box .label {
-            color: rgba(255, 255, 255, 0.8);
-            font-size: 0.7em;
-            margin-bottom: 3px;
-        }
+.info-box .label {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.7em;
+    margin-bottom: 3px;
+}
 
-        .info-box .value {
-            color: #fff;
-            font-size: 0.9em;
-            font-weight: bold;
-        }
+.info-box .value {
+    color: #fff;
+    font-size: 0.9em;
+    font-weight: bold;
+}
 
-        .info-text {
-            background: rgba(255, 255, 255, 0.1);
-            padding: 15px;
-            margin-top: 20px;
-            border-radius: 12px;
-            width: 90%;
-            max-width: 350px;
-            color: #fff;
-            text-align: right;
-            line-height: 1.6;
-            backdrop-filter: blur(15px);
-        }
-        .visitor-stats {
-            background: rgba(255, 255, 255, 0.1);
-            padding: 15px;
-            margin-top: 20px;
-            border-radius: 12px;
-            width: 90%;
-            max-width: 350px;
-            color: #fff;
-            text-align: center;
-            line-height: 1.6;
-            backdrop-filter: blur(15px);
-            }
+/* النص السفلي */
+.info-text {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 12px;
+    margin-top: 18px;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 330px;
+    color: #fff;
+    text-align: right;
+    line-height: 1.6;
+    backdrop-filter: blur(15px);
+}
+
+/* إحصائيات الزوار */
+.visitor-stats {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 12px;
+    margin-top: 18px;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 330px;
+    color: #fff;
+    text-align: center;
+    line-height: 1.6;
+    backdrop-filter: blur(15px);
+}
+
+/* 🔹 تعديل المقاسات لشاشات الجوال */
+@media (max-width: 480px) {
+    .profile-card {
+        padding: 1rem;
+        max-width: 90%;
+    }
+
+    .profile-img {
+        width: 85px;
+        height: 85px;
+        margin-top: -40px;
+    }
+
+    h1 {
+        font-size: 1.2em;
+    }
+
+    .details {
+        font-size: 0.75em;
+    }
+
+    .social-links a {
+        width: 30px;
+        height: 30px;
+        font-size: 0.9em;
+    }
+
+    .cta-button {
+        font-size: 0.75em;
+        padding: 6px 14px;
+    }
+
+    .info-boxes {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .info-box {
+        width: 80%;
+        font-size: 0.8em;
+    }
+
+    .info-text,
+    .visitor-stats {
+        font-size: 0.8em;
+        padding: 10px;
+    }
+}
