@@ -1,8 +1,8 @@
 body {
     margin: 0;
     padding: 0;
-    min-height: 100vh;https://img.freepik.com/premium-vector/technology-hexagon-dark-futuristic-abstract-vector-background-with-pink-blue-colored-bright-flashes-hexagon-hexagonal-gaming-honeycomb-abstract-background_156943-959.jpg?semt=ais_hybrid&w=740&q=80
-    background-image: url('https://morebi.x10.mx/set.png');
+    min-height: 100vh;
+    background-image: url('https://img.freepik.com/premium-photo/3d-rendered-photos-solid-background-wallpaper_1148167-33962.jpg');
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -220,4 +220,5 @@ h1 {
         padding: 10px;
     }
 }
+
 
